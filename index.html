@@ -3,91 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Оружие СНГ в AR</title>
+    <title>3D Модели</title>
     <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer@1.9.0/dist/model-viewer.min.js"></script>
 </head>
 <body>
-    <h1>Меню оружия СНГ</h1>
+    <h1>Оружие СНГ в AR</h1>
 
     <ul>
-        <li><a href="#pistols">Пистолеты</a></li>
-        <li><a href="#smgs">Пистолеты-пулеметы</a></li>
-        <li><a href="#shotguns">Дробовики</a></li>
-        <li><a href="#rifles">Автоматы</a></li>
-        <li><a href="#snipers">Снайперские винтовки</a></li>
+        <li>
+            <h3>Пистолеты</h3>
+            <model-viewer 
+                src="models/pistol.glb" 
+                ios-src="models/pistol.usdz"
+                alt="Пистолет"
+                auto-rotate
+                camera-controls
+                style="width: 100%; height: 500px;">
+            </model-viewer>
+        </li>
+
+        <li>
+            <h3>ПП</h3>
+            <model-viewer 
+                src="models/smg.glb" 
+                ios-src="models/smg.usdz"
+                alt="ПП"
+                auto-rotate
+                camera-controls
+                style="width: 100%; height: 500px;">
+            </model-viewer>
+        </li>
+
+        <li>
+            <h3>Дробовики</h3>
+            <model-viewer 
+                src="models/shotgun.glb" 
+                ios-src="models/shotgun.usdz"
+                alt="Дробовик"
+                auto-rotate
+                camera-controls
+                style="width: 100%; height: 500px;">
+            </model-viewer>
+        </li>
+
+        <li>
+            <h3>Автоматы</h3>
+            <model-viewer 
+                src="models/rifle1.glb" 
+                ios-src="models/rifle1.usdz"
+                alt="Автомат 1"
+                auto-rotate
+                camera-controls
+                style="width: 100%; height: 500px;">
+            </model-viewer>
+
+            <model-viewer 
+                src="models/rifle2.glb" 
+                ios-src="models/rifle2.usdz"
+                alt="Автомат 2"
+                auto-rotate
+                camera-controls
+                style="width: 100%; height: 500px;">
+            </model-viewer>
+        </li>
+
+        <li>
+            <h3>Снайперские винтовки</h3>
+            <model-viewer 
+                src="models/sniper1.glb" 
+                ios-src="models/sniper1.usdz"
+                alt="Снайперская винтовка 1"
+                auto-rotate
+                camera-controls
+                style="width: 100%; height: 500px;">
+            </model-viewer>
+
+            <model-viewer 
+                src="models/sniper2.glb" 
+                ios-src="models/sniper2.usdz"
+                alt="Снайперская винтовка 2"
+                auto-rotate
+                camera-controls
+                style="width: 100%; height: 500px;">
+            </model-viewer>
+        </li>
     </ul>
-
-    <!-- Пистолеты -->
-    <h2 id="pistols">Пистолеты</h2>
-    <model-viewer 
-        src="models/pistol.glb" 
-        ios-src="models/pistol.usdz"
-        alt="Пистолет" 
-        auto-rotate 
-        camera-controls 
-        style="width: 100%; height: 500px;">
-    </model-viewer>
-
-    <!-- Пистолеты-пулеметы -->
-    <h2 id="smgs">Пистолеты-пулеметы</h2>
-    <model-viewer 
-        src="models/smg.glb" 
-        ios-src="models/smg.usdz"
-        alt="Пистолет-пулемет" 
-        auto-rotate 
-        camera-controls 
-        style="width: 100%; height: 500px;">
-    </model-viewer>
-
-    <!-- Дробовики -->
-    <h2 id="shotguns">Дробовики</h2>
-    <model-viewer 
-        src="models/shotgun.glb" 
-        ios-src="models/shotgun.usdz"
-        alt="Дробовик" 
-        auto-rotate 
-        camera-controls 
-        style="width: 100%; height: 500px;">
-    </model-viewer>
-
-    <!-- Автоматы -->
-    <h2 id="rifles">Автоматы</h2>
-    <model-viewer 
-        src="models/rifle1.glb" 
-        ios-src="models/rifle1.usdz"
-        alt="Автомат 1" 
-        auto-rotate 
-        camera-controls 
-        style="width: 100%; height: 500px;">
-    </model-viewer>
-
-    <model-viewer 
-        src="models/rifle2.glb" 
-        ios-src="models/rifle2.usdz"
-        alt="Автомат 2" 
-        auto-rotate 
-        camera-controls 
-        style="width: 100%; height: 500px;">
-    </model-viewer>
-
-    <!-- Снайперские винтовки -->
-    <h2 id="snipers">Снайперские винтовки</h2>
-    <model-viewer 
-        src="models/sniper1.glb" 
-        ios-src="models/sniper1.usdz"
-        alt="Снайперская винтовка 1" 
-        auto-rotate 
-        camera-controls 
-        style="width: 100%; height: 500px;">
-    </model-viewer>
-
-    <model-viewer 
-        src="models/sniper2.glb" 
-        ios-src="models/sniper2.usdz"
-        alt="Снайперская винтовка 2" 
-        auto-rotate 
-        camera-controls 
-        style="width: 100%; height: 500px;">
-    </model-viewer>
 </body>
 </html>
